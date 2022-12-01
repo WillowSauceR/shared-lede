@@ -3,6 +3,8 @@
 # 下载源码
 git clone --depth 1 https://github.com/coolsnowwolf/lede.git && mv ./lede/* ./
 
+cp extra-files/R4A-feeds ./feeds.conf.default
+
 # 下载插件
 rm -rf package/lean/luci-theme-argon
 mkdir -p package/supply-packages && cd package/supply-packages
